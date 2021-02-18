@@ -1,0 +1,9 @@
+[Unit]
+Description=A bit about your service
+
+[Service] 
+Type=simple
+ExecStart=/usr/bin/wall "hello, whirled!"
+
+[Install]
+WantedBy=multi-user.target

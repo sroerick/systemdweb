@@ -1,0 +1,11 @@
+<html>
+<head></head>
+<body>
+  <h1>systemd control</h1>
+  <% for @item in @statuslist %>
+   <%= @item %>
+   <p><a href="/ruby/activate/<%= @item[0] %>">activate <%= @item[0] %></a></p>
+   <p><a href="/ruby/deactivate/<%= @item[0] %>">deactivate <%= @item[0] %></a></p>
+  <% end %>
+</body>
+</html>
